@@ -87,3 +87,8 @@ typings/
 # CUSTOM
 
 .vscode/
+koralhassan-desktop-linux-arm64
+koralhassan-desktop-linux-armv7l
+koralhassan-desktop-linux-x64
+koralhassan-desktop-win32-ia32
+koralhassan-desktop-win32-x64
