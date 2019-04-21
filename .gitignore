@@ -87,5 +87,3 @@ typings/
 # CUSTOM
 
 .vscode/
-node_modules
-out

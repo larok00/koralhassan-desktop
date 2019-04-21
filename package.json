@@ -1,19 +1,15 @@
 {
-  "name": "koralhassan-desktop",
-  "productName": "koralhassan-desktop",
+  "name": "electron_demo",
   "version": "1.0.0",
   "description": "Desktop app that lets you view koralhassan.com",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "electron-forge start",
-    "package": "electron-forge package",
-    "make": "electron-forge make",
-    "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "start": "electron .",
+    "test": "electron ."
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/larok00/koralhassan-desktop.git"
+    "url": "git+ssh://git@github.com/larok00/electron_demo.git"
   },
   "keywords": [
     "koralhassan",
@@ -23,50 +19,10 @@
   "author": "Koral Hassan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/larok00/koralhassan-desktop/issues"
+    "url": "https://github.com/larok00/electron_demo/issues"
   },
-  "homepage": "https://github.com/larok00/koralhassan-desktop#readme",
-  "config": {
-    "forge": {
-      "packagerConfig": {},
-      "makers": [
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "platforms": [
-            "win32"
-          ],
-          "config": {
-            "name": "my_app"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
-        },
-        {
-          "name": "@electron-forge/maker-deb",
-          "platforms": [
-            "linux"
-          ],
-          "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "platforms": [
-            "linux"
-          ],
-          "config": {}
-        }
-      ]
-    }
-  },
-  "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
-  },
+  "homepage": "https://github.com/larok00/electron_demo#readme",
   "devDependencies": {
-    "@electron-forge/cli": "^6.0.0-beta.34",
-    "electron": "4.1.4"
+    "electron": "^4.1.4"
   }
 }
