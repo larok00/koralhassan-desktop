@@ -1,15 +1,19 @@
 {
-  "name": "electron_demo",
+  "name": "koralhassan-desktop",
+  "productName": "koralhassan-desktop",
   "version": "1.0.0",
   "description": "Desktop app that lets you view koralhassan.com",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "electron .",
-    "test": "electron ."
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/larok00/electron_demo.git"
+    "url": "git+ssh://git@github.com/larok00/koralhassan-desktop.git"
   },
   "keywords": [
     "koralhassan",
@@ -19,10 +23,50 @@
   "author": "Koral Hassan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/larok00/electron_demo/issues"
+    "url": "https://github.com/larok00/koralhassan-desktop/issues"
   },
-  "homepage": "https://github.com/larok00/electron_demo#readme",
+  "homepage": "https://github.com/larok00/koralhassan-desktop#readme",
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "platforms": [
+            "win32"
+          ],
+          "config": {
+            "name": "my_app"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "platforms": [
+            "linux"
+          ],
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "platforms": [
+            "linux"
+          ],
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
   "devDependencies": {
-    "electron": "^4.1.4"
+    "@electron-forge/cli": "^6.0.0-beta.34",
+    "electron": "4.1.4"
   }
 }
