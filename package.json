@@ -6,8 +6,8 @@
   "scripts": {
     "start": "electron .",
     "test": "electron .",
-    "build": "electron-packager ./src koralhassan-desktop --all --icon=./assets/logo",
-    "build-windows": "electron-packager ./src koralhassan-desktop --platform=win32 --arch=x64 --icon=./assets/logo.ico"
+    "build": "electron-packager ./src koralhassan-desktop --all --icon=./assets/logo --out=./dist --overwrite",
+    "build-windows": "electron-packager ./src koralhassan-desktop --platform=win32 --arch=x64 --icon=./assets/logo.ico --out=./dist --overwrite"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,9 @@
   "devDependencies": {
     "electron": "^4.1.4",
     "electron-packager": "^13.1.1"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-winstaller": "^3.0.4"
   }
 }
