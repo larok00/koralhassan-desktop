@@ -1,0 +1,28 @@
+{
+  "name": "electron_demo",
+  "version": "1.0.0",
+  "description": "Desktop app that lets you view koralhassan.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/larok00/electron_demo.git"
+  },
+  "keywords": [
+    "koralhassan",
+    "electron",
+    "demo"
+  ],
+  "author": "Koral Hassan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/larok00/electron_demo/issues"
+  },
+  "homepage": "https://github.com/larok00/electron_demo#readme",
+  "devDependencies": {
+    "electron": "^4.1.4"
+  }
+}
