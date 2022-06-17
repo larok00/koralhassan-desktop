@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/larok00/koralhassan-desktop#readme",
   "devDependencies": {
-    "electron": "^9.4.0",
+    "electron": "^15.5.5",
     "electron-packager": "^13.1.1"
   },
   "dependencies": {
